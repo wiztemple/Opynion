@@ -1,0 +1,174 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+}
+.header {
+  padding-bottom: 100px;
+}
+.opynion-nav {
+  height: 70px;
+  background: #FFFFFF;
+  border-top: 1px solid #eee;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12);
+}
+.opynion-brand > a{
+  font-family: 'Lobster', cursive !important;
+font-size: 25px;
+font-weight: 800;
+color:#2E778F;
+}
+
+.createBtn {
+  padding: 15px;
+  background-color: #ECEFF5;
+  border-radius: 30px;
+  border: 2px solid #2E778F;
+
+}
+.banner {
+  padding-bottom: 50px;
+  width: 100%;
+  height: 700px;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 19% 88%, 0% 75%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 75%, 19% 88%, 0% 75%, 0 0);
+background-color:#fff;
+border-bottom: 1px solid #eee;
+box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12);
+}
+.banner > .columns > .column:nth-child(1){
+  height: 700px;
+  background-image: url('../images/banner2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.cardly {
+  position: relative;
+  margin-top: 50px;
+}
+.inner-card {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12); */
+}
+.poster-avatar {
+  margin-bottom: 18px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-image: url('../images/pexels-photo-220453.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: -10px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.poster-name {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.inner-card::before {
+  position: absolute;
+  top: -13px;
+  left: 6px;
+  content: '';
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  transform: rotate(43deg);
+  border-radius: 1px;
+  /* box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12); */
+}
+.inner-card__title {
+  display: flex;
+  justify-content: space-between;
+}
+.inner-card__title > span {
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.inner-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.cardly-poster {
+  display: flex;
+  justify-content: flex-start;
+}
+.cardly-btn {
+  margin-top: 15px;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #2E778F;
+  background-color: #ECEFF5;
+  border: 2px solid #2E778F;
+  border-radius: 30px;
+}
+.cardly-btn:focus {
+  outline: none;
+}
+.cardly-btn:hover {
+  background-color: #2E778F;
+  color: #fff;
+  transition: all .2s ease-in;
+}
+.inner-card__footer > .inner-card__footer-time {
+  margin-top: 15px;
+}
+/* .hidden-card {
+  display: none;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    border-radius: 50%;
+} */
+.user-actions {
+  position: relative;
+  display: inline-block;
+}
+.user-actions > .ellipsis {
+  font-size: 16px;
+}
+/* .hidden-card > .icon{
+  font-size: 16px;
+color: #777;
+} */
+.hidden-card {
+    display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.hidden-card  a {
+    color: black;
+  padding: 6px 14px;
+  text-decoration: none;
+  display: block;
+}
+.hidden-card a:hover {
+    background-color: #2E778F;
+    color: #fff;
+    transition: all ease-in .2s;
+    cursor: pointer;
+}
+.user-actions:hover .hidden-card {
+    display: block;
+    transition: all ease-out 1s;
+}
+.user-actions:hover .ellipsis {
+  background-color: #eee;
+  border-radius: 50%;
+}
