@@ -29,11 +29,9 @@
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
               <div href="#" class="navbar-item">
-                <div class="buttons">
-                  <a href="#" class="button createBtn">
-                    <i class="icon ion-ios-add"></i>  Add Opinion
-                  </a>
-                </div>
+                <a href="#" class="createBtn ripple" id="modalBtn" title="click to add opinion">
+                  <i class="icon ion-ios-add"></i> Add Opinion
+                </a>
               </div>
               <a href="#" class="navbar-item">
                 Latest Posts
@@ -41,11 +39,9 @@
             </div>
             <div class="navbar-end">
               <div class="navbar-item">
-                <div class="buttons">
-                  <a href="#" class="button is-primary">
-                  <strong>User</strong>
-                  </a>
-                </div>
+                <a href="#" class="createBtn ripple">
+                  Log In
+                </a>
               </div>
             </div>
           </div>
@@ -87,10 +83,10 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum nobis, laboriosam maxime possimus at odit similique sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum. Neque.</p>
                 </div>
                 <div class="inner-card__footer">
-                   <button class="cardly-btn">
+                   <button class="opynion-btn ripple">
                     <i class="icon ion-ios-thumbs-up"></i>Upvote <span>700</span>
                    </button>
-                    <button class="cardly-btn">
+                    <button class="opynion-btn ripple">
                     <i class="icon ion-ios-text"></i>Comments <span>700</span>
                    </button>
                    <span class="inner-card__footer-time">2 hours ago</span>
@@ -121,10 +117,10 @@
                     similique sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum. Neque.</p>
                 </div>
                 <div class="inner-card__footer">
-                  <button class="cardly-btn">
+                  <button class="opynion-btn ripple">
                     <i class="icon ion-ios-thumbs-up"></i>Upvote <span>700</span>
                   </button>
-                  <button class="cardly-btn">
+                  <button class="opynion-btn ripple">
                     <i class="icon ion-ios-text"></i>Comments <span>700</span>
                   </button>
                   <span class="inner-card__footer-time">2 hours ago</span>
@@ -155,10 +151,10 @@
                     similique sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum. Neque.</p>
                 </div>
                 <div class="inner-card__footer">
-                  <button class="cardly-btn">
+                  <button class="opynion-btn ripple">
                     <i class="icon ion-ios-thumbs-up"></i>Upvote <span>700</span>
                   </button>
-                  <button class="cardly-btn">
+                  <button class="opynion-btn ripple">
                     <i class="icon ion-ios-text"></i>Comments <span>700</span>
                   </button>
                   <span class="inner-card__footer-time">2 hours ago</span>
@@ -189,10 +185,10 @@
                     similique sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum. Neque.</p>
                 </div>
                 <div class="inner-card__footer">
-                  <button class="cardly-btn">
+                  <button class="opynion-btn ripple">
                     <i class="icon ion-ios-thumbs-up"></i>Upvote <span>700</span>
                   </button>
-                  <button class="cardly-btn">
+                  <button class="opynion-btn ripple">
                     <i class="icon ion-ios-text"></i>Comments <span>700</span>
                   </button>
                   <span class="inner-card__footer-time">2 hours ago</span>
@@ -204,6 +200,45 @@
         </div>
       </div>
     </section>
+    <section class="container">
+      <div id="modal" class="modal">
+          <div class="columns">
+            <div class="column is-4"></div>
+            <div class="column is-4">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="closeBtn">&times;</span>
+                  <h2 class="title is-4">Add Post</h2>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="field">
+                      <label for="name" class="label">Title</label>
+                      <div class="control">
+                        <input class="input is-rounded" type="text" placeholder="Post Title">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label for="postBody" class="label">Post</label>
+                      <div class="control">
+                        <textarea class="textarea" placeholder="Post Body"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!--end modal body-->
+                <div class="modal-footer">
+                  <button class="opynion-btn ripple">
+                    <i class="icon ion-ios-add-circle"></i> Add Post
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4"></div>
+          </div>
+      </div>
+    </section>
   </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
