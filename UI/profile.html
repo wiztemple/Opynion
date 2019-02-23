@@ -5,13 +5,262 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/bulma.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
   <title>Opynion - Share your opinion regardless of how weird it sounds</title>
 </head>
 
 <body>
   <div id="opynion">
+    <div class="header">
+      <nav class="navbar opynion-nav is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container is-fluid">
+          <div class="navbar-brand opynion-brand">
+            <a href="#" class="navbar-item">
+              Opynion
+            </a>
+            <a href="#" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <div href="#" class="navbar-item">
+                <a href="#" class="createBtn ripple" id="modalBtn" title="click to add opinion">
+                  <i class="icon ion-ios-add"></i> Add Opinion
+                </a>
+              </div>
+              <a href="#" class="navbar-item">
+                Latest Posts
+              </a>
+              <a href="#" class="navbar-item">
+                7 Following
+              </a>
+              <a href="#" class="navbar-item">
+                34 Followers
+              </a>
+              <a href="#" class="navbar-item">
+                7 Posts
+              </a>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a href="#" class="createBtn ripple">
+                  Edit Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
+    <section>
+      <div class="container is-fluid">
+        <div class="columns">
+          <div class="column is-3">
+            <div class="profileCard">
+              <div class="profileCard-avatar"></div>
+              <div class="profileCard-details">
+                <div class="profileCard-details__firstname">First Name: <span>Sullivan</span></div>
+                <div class="profileCard-details__lastname">Last Name: <span>Wisdom</span></div>
+                <div class="profileCard-details__username">Username: <span>@wiztemple</span></div>
+                <div class="profileCard-details__email">Email: <span>wiztemple7@gmail.com <span></span></div>
+                <p class="profileCard-details__bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium natus id modi eos nisi doloremque earum qui! Atque repellendus dolorum cum voluptatum quibusdam vel quae blanditiis iste, ducimus ipsam provident.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="cardly">
+              <div class="cardly-poster">
+                <div class="poster-avatar"></div>
+                <a href="profile.html" class="poster-name">
+                  <span>Sullivan Wisdom</span>
+                  <div class="poster-name__username">@wiztemple</div>
+                </a>
+              </div>
+              <div class="inner-card">
+                <div class="inner-card__title">
+                  <span>The scams of Nigerian Elections</span>
+                  <div class="user-actions">
+                    <div class="ellipsis"><i class="icon ion-ios-more"></i></div>
+                    <div class="hidden-card">
+                      <a class=""><i class="icon ion-ios-create"></i> Edit</a>
+                      <a class=""><i class="icon ion-ios-trash"></i> Delete</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card__body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum nobis, laboriosam maxime possimus
+                    at odit similique sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum.
+                    Neque.</p>
+                </div>
+                <div class="inner-card__footer">
+                  <button class="opynion-btn ripple">
+                    <i class="icon ion-ios-thumbs-up"></i>Upvote <span>700</span>
+                  </button>
+                  <a href="details.html" class="opynion-btn ripple">
+                    <i class="icon ion-ios-text"></i>Comments <span>700</span>
+                  </a>
+                  <span class="inner-card__footer-time">2 hours ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardly">
+              <div class="cardly-poster">
+                <div class="poster-avatar"></div>
+                <a href="profile.html" class="poster-name">
+                  <span>Sullivan Wisdom</span>
+                  <div class="poster-name__username">@wiztemple</div>
+                </a>
+              </div>
+              <div class="inner-card">
+                <div class="inner-card__title">
+                  <span>The scams of Nigerian Elections</span>
+                  <div class="user-actions">
+                    <div class="ellipsis"><i class="icon ion-ios-more"></i></div>
+                    <div class="hidden-card">
+                      <a class=""><i class="icon ion-ios-create"></i> Edit</a>
+                      <a class=""><i class="icon ion-ios-trash"></i> Delete</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card__body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum nobis, laboriosam maxime possimus
+                    at odit similique sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum.
+                    Neque.</p>
+                </div>
+                <div class="inner-card__footer">
+                  <button class="opynion-btn ripple">
+                    <i class="icon ion-ios-thumbs-up"></i>Upvote <span>700</span>
+                  </button>
+                  <a href="details.html" class="opynion-btn ripple">
+                    <i class="icon ion-ios-text"></i>Comments <span>700</span>
+                  </a>
+                  <span class="inner-card__footer-time">2 hours ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardly">
+              <div class="cardly-poster">
+                <div class="poster-avatar"></div>
+                <a href="profile.html" class="poster-name">
+                  <span>Sullivan Wisdom</span>
+                  <div class="poster-name__username">@wiztemple</div>
+                </a>
+              </div>
+              <div class="inner-card">
+                <div class="inner-card__title">
+                  <span>The scams of Nigerian Elections</span>
+                  <div class="user-actions">
+                    <div class="ellipsis"><i class="icon ion-ios-more"></i></div>
+                    <div class="hidden-card">
+                      <a class=""><i class="icon ion-ios-create"></i> Edit</a>
+                      <a class=""><i class="icon ion-ios-trash"></i> Delete</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card__body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum nobis, laboriosam maxime possimus
+                    at odit similique sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum.
+                    Neque.</p>
+                </div>
+                <div class="inner-card__footer">
+                  <button class="opynion-btn ripple">
+                    <i class="icon ion-ios-thumbs-up"></i>Upvote <span>700</span>
+                  </button>
+                  <a href="details.html" class="opynion-btn ripple">
+                    <i class="icon ion-ios-text"></i>Comments <span>700</span>
+                  </a>
+                  <span class="inner-card__footer-time">2 hours ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardly">
+              <div class="cardly-poster">
+                <div class="poster-avatar"></div>
+                <a href="profile.html" class="poster-name">
+                  <span>Sullivan Wisdom</span>
+                  <div class="poster-name__username">@wiztemple</div>
+                </a>
+              </div>
+              <div class="inner-card">
+                <div class="inner-card__title">
+                  <span>The scams of Nigerian Elections</span>
+                  <div class="user-actions">
+                    <div class="ellipsis"><i class="icon ion-ios-more"></i></div>
+                    <div class="hidden-card">
+                      <a class=""><i class="icon ion-ios-create"></i> Edit</a>
+                      <a class=""><i class="icon ion-ios-trash"></i> Delete</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-card__body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum nobis, laboriosam maxime possimus
+                    at odit similique sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum.
+                    Neque.</p>
+                </div>
+                <div class="inner-card__footer">
+                  <button class="opynion-btn ripple">
+                    <i class="icon ion-ios-thumbs-up"></i>Upvote <span>700</span>
+                  </button>
+                  <a href="details.html" class="opynion-btn ripple">
+                    <i class="icon ion-ios-text"></i>Comments <span>700</span>
+                  </a>
+                  <span class="inner-card__footer-time">2 hours ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-3"></div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div id="modal" class="modal">
+        <div class="columns">
+          <div class="column is-4"></div>
+          <div class="column is-4">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h2 class="title is-4">Add Post</h2>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="field">
+                    <label for="name" class="label">Title</label>
+                    <div class="control">
+                      <input class="input is-rounded" type="text" placeholder="Post Title">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="postBody" class="label">Post</label>
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Post Body"></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!--end modal body-->
+              <div class="modal-footer">
+                <button class="opynion-btn ripple">
+                  <i class="icon ion-ios-add-circle"></i> Add Post
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
   </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
