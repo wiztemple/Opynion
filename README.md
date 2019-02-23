@@ -5,3 +5,5 @@ Some people feel that urge to air their opinions, sometimes wierd opinions. It c
 Let me summarize this with a quote from John Mayers's song, In the end its better to say too much than never to say what you need to say. ``John Mayer``
 
 ![Prompts](/UI/assets/images/prompt.png)
+
+![DetailsPage](/UI/assets/images/details.png)
