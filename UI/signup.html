@@ -5,13 +5,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Opynion - Share your opinion regardless of how weird it sounds</title>
+  <link rel="stylesheet" href="./assets/css/bulma.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
+  <title>Opynion - Share your opinion regardless of how weird it sounds | Sign Up</title>
 </head>
 
 <body>
   <div id="opynion">
+    <div class="header">
+      <nav class="navbar opynion-nav is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container is-fluid">
+          <div class="navbar-brand opynion-brand">
+            <a href="#" class="navbar-item">
+              Opynion
+            </a>
+            <a href="#" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+            <a href="#" class="navbar-item">
+              Latest Posts
+            </a>
+             
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a href="login.html" class="createBtn ripple">
+                  Sign In
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
+    <section>
+      <div class="container is-fluid">
+        <div class="columns">
+          <div class="column is-4">
+            
+          </div>
+          <div class="column is-5">
+            
+          </div>
+          <div class="column is-3">
+            <div class="Opynion-auth">
+              <form>
+                <div class="field">
+                  <label class="label f-w400">First Name</label>
+                  <div class="control">
+                    <input class="input is-medium" type="text" placeholder="Text input">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label f-w400">Last Name</label>
+                  <div class="control">
+                    <input class="input is-medium" type="text" placeholder="Text input">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label f-w400">Username</label>
+                  <div class="control">
+                    <input class="input is-medium" type="text" placeholder="Text input" value="bulma">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label f-w400">Email</label>
+                  <div class="control">
+                    <input class="input is-medium" type="email" placeholder="Email input" value="hello@">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label f-w400">Password</label>
+                  <div class="control">
+                    <input class="input is-medium" type="password" placeholder="Password" value="**********">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label f-w400">Confirm Password</label>
+                  <div class="control">
+                    <input class="input is-medium" type="password" placeholder="Confirm Password" value="**********">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                  </div>
+                </div>
+                <button class="opynion-btn ripple">
+                    Create Account
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
