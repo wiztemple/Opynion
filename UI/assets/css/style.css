@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Tajawal:400');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
 html, body {
-  font-family: 'Tajawal', sans-serif;
-  font-size: 16px;
+  font-family: 'Libre Franklin', sans-serif;
   background-color: #fff;
   font-kerning: normal;
 }
@@ -108,10 +107,10 @@ box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12);
 .cardly {
   position: relative;
   background-color: #fff;
-  padding: 10px;
+  padding: 15px;
   margin-top: 50px;
   border-radius: 5px;
-  /* border: 1px solid #eee; */
+  border: 1px solid #eee;
   /* box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12);  */
 }
 
@@ -167,13 +166,14 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   font-weight: 600;
 }
 .inner-card__body p {
-  line-height: 200%;
-  font-size: 15px;
-  line-height:20px;
+line-height: 200%;
+font-size: 15px;
+line-height:20px;
 vertical-align:baseline;
-word-spacing:0px;
 text-align: start;
-text-indent:0px;
+}
+.inner-card__comment {
+  margin-top: 15px;
 }
 .inner-card__footer {
   display: flex;
@@ -192,7 +192,10 @@ text-indent:0px;
 
 /*buttons*/
 .createBtn {
-  padding: 7px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
   background-color: #ECEFF5;
   border-radius: 30px;
   border: 2px solid #2E778F;
@@ -207,12 +210,12 @@ text-indent:0px;
 }
 .opynion-btn {
   margin-top: 15px;
-  padding: 3px 5px;
+  padding: 2px 10px;
   font-size: 16px;
   color: #2E778F;
   background-color: #ECEFF5;
-  border: 2px solid #2E778F;
   border-radius: 30px;
+  border-radius: none;
 }
 .opynion-btn:focus {
   outline: none;
@@ -282,6 +285,7 @@ color: #777;
 }
 
 .hidden-card  a {
+  padding: 5px 10px;
     color: black;
   text-decoration: none;
   display: block;
@@ -359,6 +363,7 @@ color: #777;
 }
 .commentControl {
   padding-left: 50px;
+  border-radius:30px !important;
 }
 /* .commentControl::placeholder {
   padding: 5px 0 0 50px;
