@@ -3,6 +3,11 @@ html, body {
   font-family: 'Libre Franklin', sans-serif;
   background-color: #fff;
   font-kerning: normal;
+  line-height:33.18px;
+vertical-align:baseline;
+letter-spacing:-0.063px;
+word-spacing:0px;
+
 }
 body::-webkit-scrollbar {
     width: 0.4em;
@@ -46,13 +51,13 @@ outline: 1px solid #2E778F;
 .opynion-nav {
   height: 60px;
   background: #FFFFFF;
-  border-top: 1px solid #eee;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12);
+  border-bottom: 1px solid #eee;
+  /* box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12); */
 }
 .opynion-brand > a{
 font-family: 'Srisakdi', cursive;
 font-size: 25px;
-font-weight: 800;
+font-weight:bolder;
 color:#2E778F;
 }
 .navbar .wizsullivan-brand > a.navbar-item:hover, .navbar .wizsullivan-brand > a.navbar-item.is-active,
@@ -135,14 +140,15 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .poster-name {
   color: #333;
-  margin-top: 8px;
   margin-left: 10px;
+  font-size: 14px;
 }
 .poster-name:hover {
   color: #e5950b;
 }
 .poster-name__username {
-  margin-top: -6px;
+  margin-top: -13px;
+  font-size: 13px;
 }
 
 /* .inner-card::before {
@@ -156,14 +162,11 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   transform: rotate(180deg);
   border-radius: 2px;
 } */
-.inner-card__title {
-  display: flex;
-  justify-content: space-between;
-}
+
 .inner-card__title > span {
-  padding-bottom: 10px;
-  font-size: 25px;
-  font-weight: 600;
+  padding-bottom:0 15px;
+  font-size: 24px;
+  font-weight: 500;
 }
 .inner-card__body p {
 line-height: 200%;
@@ -266,8 +269,14 @@ text-align: start;
   position: relative;
   display: inline-block;
 }
-.user-actions > .ellipsis {
-  font-size: 16px;
+ .ellipsis {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border-radius: 50%;
 }
 /* .hidden-card > .icon{
   font-size: 16px;
