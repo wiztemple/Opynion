@@ -75,7 +75,7 @@ color:#2E778F;
   .opynion-nav  .navbar-end .navbar-link.is-active {
     background-color: transparent;
     color: #333;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
   }
   .opynion-nav  .navbar-start > a.navbar-item:hover, .opynion-nav  .navbar-start > a.navbar-item.is-active,
   .opynion-nav  .navbar-start .navbar-link:hover,
@@ -164,12 +164,15 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 } */
 
 .inner-card__title > span {
+  color: #3e5463;
+  line-height: 28px !important;
   padding-bottom:0 15px;
   font-size: 24px;
   font-weight: 500;
 }
 .inner-card__body p {
-line-height: 200%;
+color: #536876;
+line-height: 30px !important;
 font-size: 15px;
 line-height:20px;
 vertical-align:baseline;
@@ -322,11 +325,18 @@ color: #777;
 .detailsCard:hover {
   background-color: #f8f8f8;
 }
-.detailsCard-user__name {
+.detailsCard-user__names {
   margin: 5px 0 0 10px;
 }
-.detailsCard-user__name span {
+.detailsCard-user__names:hover {
+  color: #e5950b;
+}
+.detailsCard-user__names-name {
   font-size: 14px;
+}
+.detailsCard-user__names-username {
+  font-size: 13px;
+  margin-top: -15px;
 }
 .detailsCard-title {
   font-size: 25px;
@@ -384,10 +394,11 @@ color: #777;
   margin-top: 40px;
 }
 .commentOutput-count {
-  margin-top: 10px;
+  margin-top: 2px;
 }
 .commentOutput-count span {
   color: #e5950b;
+  font-size: 12px;
 }
 .commentOutput-count span:nth-child(2) {
   margin-left: 10px;
@@ -411,15 +422,7 @@ color: #777;
 .commentOutputCard:hover {
   background-color: #f8f8f8;
 }
-/* .commentOutput::after {
-  height: 500px;
-  position: absolute;
-  left: 5%;
-  top: 100%;
-  bottom: 0;
-  content: '';
-  border-left: 1px solid #ddd;
-} */
+
 .commentOutput-user__name {
   margin-left: 10px;
 }
@@ -428,8 +431,11 @@ color: #777;
   font-weight: 600;
 }
 .commentOutput-user__name .commentOutput-user__name-username {
-  margin-top: -5px;
-  font-size: 14px;
+  margin-top: -16px;
+  font-size: 13px;
+}
+.commentOutput-user__name:hover {
+  color: #e5950b;
 }
 .commentOutput-user__image-avatar {
    width: 45px;
@@ -449,7 +455,7 @@ color: #777;
   margin-top: 20px;
 }
 .commentOutput-reactions span {
-  font-size: 18px;
+  font-size: 15px;
   color: #777;
 }
 .commentOutput-time {
@@ -459,19 +465,15 @@ color: #777;
 .commentOutput-reactions__reply {
    margin-left: 20px;
 }
+.commentOutput-reactions__reply:hover {
+  color: #000;
+}
 .commentOutput-reactions__like:hover {
   color: #000;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
-.commentOutput-reactions__reply:hover {
-  padding: 10px;
-  color: #000;
-  background-color: #ECEFF5;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.2s ease-in;
-}
+
 
 /*replyCommentField*/
 .replyCommentField {
