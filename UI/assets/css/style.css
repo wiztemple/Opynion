@@ -176,7 +176,10 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 91% 75%, 77% 88%, 67% 76%, 0% 75%);
   font-size: 18px;
   margin-left: 5px;
 }
- 
+
+.cardly:first-child {
+  margin-top: 100px;
+}
 /*cardly and inner-card */
 .cardly:first-child {
   margin-top: 100px;
