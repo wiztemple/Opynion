@@ -742,6 +742,35 @@ text-align: start;
 }
 
 /*modal*/
+.post-image {
+ background-color: #eee;
+ border: none;
+ border-radius: 30px;
+}
+.post-emoji {
+  margin-left: 10px;
+  background-color: #eee;
+ border: none;
+ border-radius: 30px;
+ outline: none;
+}
+.post-btn {
+  margin: 10px 0 20px 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
+.post-btn:hover {
+  background-color: #444;
+}
+#image {
+  outline: none;
+  padding: 5px 5px;
+  border-radius: 20px;
+}
 .modal{
     display: none;
     position: fixed;
@@ -751,30 +780,45 @@ text-align: start;
     height:100%;
     width: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.7);
 }
 .modal-header {
   position: relative;
   padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+  border-radius: 10px
 }
 .modal-header > span {
   position: absolute;
-  top: -16px;
-  right: 0;
+  top: 5px;
+  right: 10px;
 }
 .modal-header > h2 {
-  text-align: center;
-  color: #2E778F;
+  padding-left: 10px;
+  color: #222;
+  font-weight: 400;
 }
-  .modal-content{
+.modal-content{
    border-radius: 10px;
    background-color: #fff;
    width: 30%;
    margin-top: 150px;
-   padding: 20px;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    animation-name: modalopen;
    animation-duration: 1s;
+}
+.modal-content2{
+   border-radius: 10px;
+   background-color: #fff;
+   width: 50%;
+   margin: 100px auto 20px auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   animation-name: modalopen;
+   animation-duration: 1s;
+}
+.modal-body {
+  padding: 20px;
 }
   .closeBtn{
     color:#ccc;
@@ -787,7 +831,20 @@ text-align: start;
     text-decoration: none;
     cursor: pointer;
 }
-  
+.post-textarea {
+	min-height: 4em !important;
+	max-height: 50vh;
+  width: 100%;
+  padding: 10px 0 0 10px;
+  border: 1px solid #ddd !important;
+  border-radius: 20px !important;
+  outline: none;
+}
+.post-textarea::-webkit-input-placeholder {
+  padding: 0px 0 0 10px;
+  color: #ddd;
+  font-size: 14px;
+}
   @keyframes modalopen{
     from{opacity: 0;}
     to {opacity: 1;}
