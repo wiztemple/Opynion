@@ -244,6 +244,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .inner-card__body p {
 color: #777;
+max-width: 65ch;
 line-height: 30px !important;
 font-size: 15px;
 line-height:20px;
