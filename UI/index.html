@@ -1,575 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./assets/css/bulma.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Opynion - Share your opinion regardless of how weird it sounds</title>
 </head>
-<body class="bg-white bg-scalars">
-  <div id="opynion" class="opynion-layout">
-    <div class="header">
-      <nav class="navbar opynion-nav is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="container">
-          <div class="navbar-brand opynion-brand">
-            <a href="index.html" class="navbar-item">
-              Opynion
-            </a>
-            <a href="#" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
+<body class="home-scale">
+ <div class="app">
+   <div class="header">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container is-fluid">
+          <div class="brand">
+            <a href="index.html" class="navbar-item">OPYNION</a>
+            <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+              <span>&#8801;</span>
             </a>
           </div>
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <div href="#" class="navbar-item">
-                <a href="#" class="createBtn ripple" id="modalBtn" title="click to add opinion">
-                 &#43; Ask Question
-                </a>
-              </div>
-              <a href="#" class="navbar-item is-active">
-                Latest Posts
-              </a>
+          <div class="nav-menu">
+            <div class="navbar-left">
+              <a class="navbar-item" href="#">Feeds</a>
             </div>
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a href="#" class="createBtn ripple">
-                  Log In &rarr;
-                </a>
-              </div>
+            <div class="navbar-right">
+              <a class="navbar-item" href="#">
+                Sign Up
+              </a>
+              <a class="navbar-item" href="#">
+                Log In
+              </a>
             </div>
           </div>
         </div>
       </nav>
-
-    <!-- <section>
-      <div class="container">
-        <div class="columns">
-          <div class="column is-3">
-            <div class="categoryCard religion">
-              <div class="overlay">
-                <a href="#" class="categoryLink">Religion</a>
-                <span class="postCount">35 Posts</span>
+   </div>
+   <section>
+     <div class="container is-fluid">
+       <h1 class="h3 pt-40 pb-40 home-title">10th June 2019</h1>
+       <div class="columns">
+         <div class="col-3">
+           <div class="appcard">
+             <div class="appcard-image">
+               <img src="./assets/images/ask-blackboard-356079.jpg">
+             </div>
+             <div class="appcard-content">
+              <h1 class="h5">Ask Questions</h1>
+             </div>
+           </div>
+         </div>
+        <div class="col-3">
+          <div class="appcard">
+            <div class="appcard-image">
+              <img src="./assets/images/adult-chair-conversation-2422290.jpg">
+            </div>
+            <div class="appcard-content">
+              <h1 class="h5">Share your opinion</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="appcard">
+            <div class="appcard-image">
+              <img src="./assets/images/ask-blackboard-356079.jpg">
+            </div>
+            <div class="appcard-content">
+              <h1 class="h5">Share your experience</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="appcard">
+            <div class="appcard-image">
+              <img src="./assets/images/ask-blackboard-356079.jpg">
+            </div>
+            <div class="appcard-content">
+              <h1 class="h5">Share your feelings</h1>
+            </div>
+          </div>
+        </div>
+       </div>
+       <!-- <div class="columns">
+         <div class="col-3"></div>
+          <div class="col-6">
+            <div class="centralize">
+              <div class="center-card">
+                <div class="center-card__image">
+                  <img src="./assets/images/adult-chair-conversation-2422290.jpg" class="" alt="" />
+                  <div class="overlay"></div>
+                </div>
+                <button class="btn btn-black">Join the community</button>
               </div>
             </div>
           </div>
-          <div class="column is-3">
-            <div class="categoryCard school">
-              <div class="overlay">
-                <a href="#" class="categoryLink">School</a>
-                <span class="postCount">57 Posts</span>
-              </div>
+          <div class="col-3"></div>
+        </div> -->
+     </div>
+     <div class="container is-fluid">
+      <h1 class="h4 pt-40 pb-40 home-title">Most discussed topics</h1>
+      <div class="columns">
+        <div class="col-3">
+          <div class="overlaycard">
+            <div class="overlaycard-image">
+              <img src="./assets/images/action-adult-crowd-1464222.jpg">
             </div>
-          </div>
-          <div class="column is-3">
-            <div class="categoryCard politics">
-              <div class="overlay">
-                <a href="#" class="categoryLink">Politics</a>
-                <span class="postCount">23 Posts</span>
-              </div>
-            </div>
-          </div>
-          <div class="column is-3">
-            <div class="categoryCard school">
-              <div class="overlay">
-                <a href="#" class="categoryLink">Sports</a>
+            <div class="overlay">
+              <div class="overlaycard-content">
+                <h1 class="h4">Politics</h1>
+                <div class="overlaycard-span">55 Posts</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="columns">
-          <div class="column is-3">
-            <div class="categoryCard religion">
-              <div class="overlay">
-                <a href="#" class="categoryLink">Adult</a>
-                <span class="postCount">657 Posts</span>
-              </div>
+        <div class="col-3">
+          <div class="overlaycard">
+            <div class="overlaycard-image">
+              <img src="./assets/images/apple-desk-internet-209151.jpg">
             </div>
-          </div>
-          <div class="column is-3">
-            <div class="categoryCard school">
-              <div class="overlay">
-                <a href="#" class="categoryLink">History</a>
-                <span class="postCount">657 Posts</span>
-              </div>
-            </div>
-          </div>
-          <div class="column is-3">
-            <div class="categoryCard religion">
-              <div class="overlay">
-                <a href="#" class="categoryLink">Religion</a>
-              </div>
-            </div>
-          </div>
-          <div class="column is-3">
-            <div class="categoryCard school">
-              <div class="overlay">
-                <a href="#" class="categoryLink">School</a>
-              </div>
+            <div class="overlay"></div>
+            <div class="overlaycard-content">
+              <h1 class="h4">Science & Technology</h1>
+              <div class="overlaycard-span">21 Posts</div>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
-   
-    <section>
-      <div class="container">
-        <div class="columns">
-          <div class="column is-9 mt-100">
-            <div class="categories">
-              <div class="select is-rounded">
-                <select>
-                  <option>Latest posts</option>
-                  <option>Politics</option>
-                  <option>Religion</option>
-                </select>
-              </div>
+        <div class="col-3">
+          <div class="overlaycard">
+            <div class="overlaycard-image">
+              <img src="./assets/images/liverpool.jpg">
             </div>
-            <div class="rec-card">
-              <div class="rec-card__image">
-                
-              </div>
-              <div class="rec-card__details">
-                <div class="space-between">
-                  <div>
-                    <h2 class="rec-card__details-title">Supporters gather after reports Assange may be ousted from embassy</h2>
-                    <div class="space-start">
-                      <div class="rec-card-avatar"></div> 
-                      <a class="poster-username" href="profile.html">@wiztemple</a>
-                    </div>
-                  </div>
-                  <div class="user-actions">
-                    <div class="ellipsis">&ctdot;</div>
-                    <div class="hidden-card">
-                      <a href="#">&#128221; Edit</a>
-                      <a href="#">&#10060; Delete</a>
-                    </div>
-                  </div>
-                </div>
-                <p>Supporters handed out leaflets urging people to write to their MPs to defend WikiLeaks and took turns to hold up a
-                banner saying: “The truth will set you free. Free Julian Assange.”</p>
-                <div class="rec-card__footer">
-                  <a class="upvote-btn ripple">
-                    &#128077; Upvote <span>700</span>
-                  </a>
-                  <a class="details-btn ripple" href="#">
-                    &#128172; Comments <span>700</span>
-                  </a>
-                  <div class="rec-card__footer-time">
-                    <span> 2 Hours ago </span>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-            <div class="rec-card">
-              <div class="rec-card__image">
-            
-              </div>
-              <div class="rec-card__details">
-                <div class="space-between">
-                  <div>
-                    <h2 class="rec-card__details-title">Supporters gather after reports Assange may be ousted from embassy</h2>
-                    <div class="space-start">
-                      <div class="rec-card-avatar"></div>
-                      <a class="poster-username" href="profile.html">@wiztemple</a>
-                    </div>
-                  </div>
-                  <div class="user-actions">
-                    <div class="ellipsis">&ctdot;</div>
-                    <div class="hidden-card">
-                      <a href="#">&#128221; Edit</a>
-                      <a href="#">&#10060; Delete</a>
-                    </div>
-                  </div>
-                </div>
-                <p>Supporters handed out leaflets urging people to write to their MPs to defend WikiLeaks and took turns to hold up
-                  a
-                  banner saying: “The truth will set you free. Free Julian Assange.”</p>
-                <div class="rec-card__footer">
-                  <a class="upvote-btn ripple">
-                    &#128077; Upvote <span>700</span>
-                  </a>
-                  <a class="details-btn ripple" href="details.html">
-                    &#128172; Comments <span>700</span>
-                  </a>
-                  <div class="rec-card__footer-time">
-                    <span> 2 Hours ago </span>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-            <div class="rec-card">
-              <div class="rec-card__image">
-            
-              </div>
-              <div class="rec-card__details">
-                <div class="space-between">
-                  <div>
-                    <h2 class="rec-card__details-title">Supporters gather after reports Assange may be ousted from embassy</h2>
-                    <div class="space-start">
-                      <div class="rec-card-avatar"></div>
-                      <a class="poster-username" href="profile.html">@wiztemple</a>
-                    </div>
-                  </div>
-                  <div class="user-actions">
-                    <div class="ellipsis">&ctdot;</div>
-                    <div class="hidden-card">
-                      <a href="#">&#128221; Edit</a>
-                      <a href="#">&#10060; Delete</a>
-                    </div>
-                  </div>
-                </div>
-                <p>Supporters handed out leaflets urging people to write to their MPs to defend WikiLeaks and took turns to hold up
-                  a
-                  banner saying: “The truth will set you free. Free Julian Assange.”</p>
-                <div class="rec-card__footer">
-                  <a class="upvote-btn ripple">
-                    &#128077; Upvote <span>700</span>
-                  </a>
-                  <a class="details-btn ripple" href="details.html">
-                    &#128172; Comments <span>700</span>
-                  </a>
-                  <div class="rec-card__footer-time">
-                    <span> 2 Hours ago </span>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-            <div class="rec-card">
-              <div class="rec-card__image">
-            
-              </div>
-              <div class="rec-card__details">
-                <div class="space-between">
-                  <div>
-                    <h2 class="rec-card__details-title">Supporters gather after reports Assange may be ousted from embassy</h2>
-                    <div class="space-start">
-                      <div class="rec-card-avatar"></div>
-                      <a class="poster-username" href="profile.html">@wiztemple</a>
-                    </div>
-                  </div>
-                  <div class="user-actions">
-                    <div class="ellipsis">&ctdot;</div>
-                    <div class="hidden-card">
-                      <a href="#">&#128221; Edit</a>
-                      <a href="#">&#10060; Delete</a>
-                    </div>
-                  </div>
-                </div>
-                <p>Supporters handed out leaflets urging people to write to their MPs to defend WikiLeaks and took turns to hold up
-                  a
-                  banner saying: “The truth will set you free. Free Julian Assange.”</p>
-                <div class="rec-card__footer">
-                  <a class="upvote-btn ripple">
-                    &#128077; Upvote <span>700</span>
-                  </a>
-                  <a class="details-btn ripple" href="details.html">
-                    &#128172; Comments <span>700</span>
-                  </a>
-                  <div class="rec-card__footer-time">
-                    <span> 2 Hours ago </span>
-                  </div>
-                </div>
-              </div>
-            
+            <div class="overlay"></div>
+            <div class="overlaycard-content">
+              <h1 class="h4">Sports</h1>
+              <div class="overlaycard-span">21 Posts</div>
             </div>
           </div>
-          <!-- <div class="column is-3">
-            <div class="sidebar">
-              <a href="#">Discussions</a>
-            </div>
-          </div> -->
         </div>
-      </div>
-    </section>
-    <section class="container">
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="closeBtn">&times;</span>
-            <h2 class="title is-5">Add Post</h2>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="field">
-                <div class="control">
-                  <input class="input is-rounded" type="text" placeholder="Post Title"></textarea>
-                </div>
-              </div>
-              <div class="field">
-                <div class="control">
-                  <textarea class="post-textarea" placeholder="Post Body"></textarea>
-                </div>
-              </div>
-              <div class="space-start extra">
-                <button type="button" class="post-image">
-                  &#127753; <input type="file" id="image" name="avatar" accept="image/png, image/jpeg">
-                </button>
-                <button type="button" class="post-emoji">
-                  &#128512; Add Emoji
-                </button>
-              </div>
-            </form>
-          </div>
-          <!--end modal body-->
-          <div class="modal-footer">
-            <button class="post-btn ripple">
-              &#10133; Add Post
-            </button>
+        <div class="col-3">
+          <div class="overlaycard">
+            <div class="overlaycard-image">
+              <img src="./assets/images/altar-ancient-architecture-157236.jpg">
+            </div>
+            <div class="overlay"></div>
+            <div class="overlaycard-content">
+              <h1 class="h4">Religion</h1>
+              <div class="overlaycard-span">21 Posts</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="modal modal2">
-        <div class="modal-content2">
-          <div class="modal-header">
-            <span class="closeBtn">&times;</span>
+     </div>
+   </section>
+   <div class="footer">
+     <div class="container is-fluid">
+       <div class="columns">
+         <div class="col-4">
+          <div class="home-footer">
+            <a href="#">ABOUT US</a>
+            <a href="#">API</a>
+            <a href="#">PRIVACY</a>
           </div>
-          <div class="modal-body2">
-            <div class="relativeDiv">
-              <div class="detailsCard">
-                <div class="space-between">
-                  <div class="space-start">
-                    <div class="detailsCard-user__image">
-                      <div class="details-avatar"></div>
-                    </div>
-                    <a href="profile.html" class="detailsCard-user__names">
-                      <div class="detailsCard-user__names-name">Sullivan Wisdom</div>
-                      <div class="detailsCard-user__names-username">@Sullivan</div>
-                    </a>
-                  </div>
-                  <div class="user-actions">
-                    <div class="ellipsis">&hellip;</div>
-                    <div class="hidden-card">
-                      <a class="">&#128221; Edit</a>
-                      <a class="">&#10060; Delete</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="detailsCard-title">
-                  <span>The scams of Nigerian Elections</span>
-                </div>
-                <div class="detailsCard-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum nobis, laboriosam maxime possimus at odit
-                    similique
-                    sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum. Neque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolore quos sit fuga eos magnam in sequi ab,
-                    minima non quae. Modi voluptatibus quia laboriosam quaerat iure officia fugit doloremque blanditiis dolor
-                    deserunt sunt pariatur, odit cumque iste quos! Saepe eum aspernatur, veritatis distinctio animi fugiat nam
-                    quidem
-                    dolorum nemo dignissimos. Voluptas eum, aperiam molestias illo, voluptates, dicta distinctio iusto suscipit
-                    neque
-                    minus sapiente nihil est libero quaerat illum! Provident earum, aperiam atque eligendi nobis corrupti
-                    cupiditate
-                    aliquid similique cum. Aliquid modi aliquam commodi laborum sint temporibus veniam incidunt sequi officiis,
-                    illum, consequatur provident. Error blanditiis aut eveniet dignissimos reiciendis!
-                  </p>
-                </div>
-                <div class="space-between">
-                  <a class="opynion-btn ripple">
-                    &#128077; Upvote <span>700</span>
-                  </a>
-                  <a class="inner-card__comment" href="details.html">
-                    &#128172; Comments <span>700</span>
-                  </a>
-                  <span class="detailsCard-time">2 hours ago</span>
-                </div>
-              </div>
-            
-              <div class="commentField">
-                <div class="commenterAvatar"></div>
-                <div>
-                  <form class="commentForm">
-                    <div class="field">
-                      <div class="control">
-                        <textarea class="textarea is-small commentControl" placeholder="Post Comment"></textarea>
-                      </div>
-                    </div>
-                    <button class="opynion-btn ripple">
-                      &#10133; Add Post
-                    </button>
-                  </form>
-                </div>
-              </div>
-            
-              <div class="commentCount">
-                <span>4646 Comments</span>
-              </div>
-            
-              <div class="commentOutput">
-                <div class="commentOutputCard">
-                  <div class="space-between">
-                    <div class="space-start">
-                      <div class="commentOutput-user__image">
-                        <div class="commentOutput-user__image-avatar"></div>
-                      </div>
-                      <a href="profile.html" class="commentOutput-user__name">
-                        <span>Sullivan Wisdom</span>
-                        <div class="commentOutput-user__name-username">@Sullivan</div>
-                      </a>
-                    </div>
-                    <div class="user-actions">
-                      <div class="ellipsis">&ctdot;</div>
-                      <div class="hidden-card">
-                        <a href="#">&#128221; Edit</a>
-                        <a href="#">&#10060; Delete</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="commentOutput-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum nobis, laboriosam maxime possimus at odit
-                      similique
-                      sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum. Neque.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nostrum aut veniam culpa sunt sequi, earum vero
-                      autem repellendus sit!
-                    </p>
-                  </div>
-                  <div class="space-start commentOutput-count">
-                    <span>123 upvotes</span>
-                    <span>56 Replies</span>
-                  </div>
-                  <div class="space-between">
-                    <div class="commentOutput-reactions">
-                      <span class="commentOutput-reactions__like">&#128077; Upvote </i></span>
-                      <span class="commentOutput-reactions__reply">Reply &#10549;</span>
-                    </div>
-                    <div class="commentOutput-time">
-                      <span>23 hours ago</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="replyCommentField">
-                  <div class="replierAvatar"></div>
-                  <form class="replyCommentForm">
-                    <div class="field">
-                      <div class="control">
-                        <textarea class="textarea is-small replyCommentControl" placeholder="Reply here....."></textarea>
-                      </div>
-                    </div>
-                    <button class="opynion-btn ripple">
-                      Reply &#10549;
-                    </button>
-                  </form>
-                </div>
-              </div>
-            
-              <div class="replyOutput">
-                <div class="replyOutputCard">
-                  <div class="space-between">
-                    <div class="space-start">
-                      <div class="replytOutput-user__image">
-                        <div class="replyOutput-user__image-avatar"></div>
-                      </div>
-                      <a href="profile.html" class="replyOutput-user__name">
-                        <span>Sullivan Wisdom</span>
-                        <div class="replyOutput-user__name-username">@Sullivan</div>
-                      </a>
-                    </div>
-                    <div class="user-actions">
-                      <div class="ellipsis">&ctdot;</div>
-                      <div class="hidden-card">
-                        <a href="#">&#128221; Edit</a>
-                        <a href="#">&#10060; Delete</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="replyOutput-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum nobis, laboriosam maxime possimus at odit
-                      similique
-                      sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum. Neque.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nostrum aut veniam culpa sunt sequi, earum vero
-                      autem repellendus sit!
-                    </p>
-                  </div>
-                  <div class="space-start replyOutput-count">
-                    <span>123 likes</span>
-                    <span>56 Replies</span>
-                  </div>
-                  <div class="space-between">
-                    <div class="replyOutput-reactions">
-                      <span class="replyOutput-reactions__like">&#128077; Upvote</span>
-                      <span class="replyOutput-reactions__reply">Reply &#10549;</span>
-                    </div>
-                    <div class="replyOutput-time">
-                      <span>23 hours ago</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="replyReplyField">
-                  <div class="replyReplierAvatar"></div>
-                  <form class="replyReplyForm">
-                    <div class="field">
-                      <div class="control">
-                        <textarea class="textarea is-small replyReplyControl" placeholder="Reply here....."></textarea>
-                      </div>
-                    </div>
-                    <button class="opynion-btn ripple">
-                      Reply &#10549;
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <div class="replyOutput">
-                <div class="replyOutputCard">
-                  <div class="space-between">
-                    <div class="space-start">
-                      <div class="replytOutput-user__image">
-                        <div class="replyOutput-user__image-avatar"></div>
-                      </div>
-                      <div class="replyOutput-user__name">
-                        <span>Sullivan Wisdom</span>
-                        <div class="replyOutput-user__name-username">@Sullivan</div>
-                      </div>
-                    </div>
-                    <div class="user-actions">
-                      <div class="ellipsis"><i class="icon ion-ios-more"></i></div>
-                      <div class="hidden-card">
-                        <a class=""><i class="icon ion-ios-create"></i> Edit</a>
-                        <a class=""><i class="icon ion-ios-trash"></i> Delete</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="replyOutput-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum nobis, laboriosam maxime possimus at odit
-                      similique
-                      sit iure quisquam placeat a tempora quas itaque adipisci hic fugiat dolorum. Neque.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nostrum aut veniam culpa sunt sequi, earum vero
-                      autem repellendus sit!
-                    </p>
-                  </div>
-                  <div class="space-start replyOutput-count">
-                    <span>123 likes</span>
-                    <span>56 Replies</span>
-                  </div>
-                  <div class="space-between">
-                    <div class="replyOutput-reactions">
-                      <span class="replyOutput-reactions__like">Like<i class="icon ion-ios-thumbs-up"></i></span>
-                      <span class="replyOutput-reactions__reply">Reply<i class="icon ion-ios-share-alt"></i></span>
-                    </div>
-                    <div class="replyOutput-time">
-                      <span>23 hours ago</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-          </div>
-          <!--end modal body-->
-          <!-- <div class="modal-footer">
-            <button class="post-btn ripple">
-              &#10133; Add Post
-            </button>
-          </div> -->
-        </div>
-      </div>
-    </section>
-  </div>
-  <script src="./assets/js/main.js"></script>
+         </div>
+       </div>
+     </div>
+    </div>
+ </div> 
 </body>
 </html>
