@@ -745,6 +745,13 @@ color: #444;
   font-size: 16px;
   color: #444;
 }
+/* .card-body > p {
+  font-family: 'Times', Times, serif;
+} */
+.card-body > p::first-letter {
+  font-size: 200%;
+}
+
 .date-span {
   font-size: 14px;
   color: #777;
@@ -868,22 +875,24 @@ color: #444;
   border-radius: 5px;
 }
 /*left-bar*/
-.left-bar { padding: 20px 10px 20px 0; }
+.left-bar { 
+  padding: 20px 10px 20px 0;
+ }
 .left-bar-item {
   display: block;
   color: #444;
   margin: 8px 0;
-  padding: 2px 5px;
+  padding: 5px 20px;
   background-color: transparent;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .left-bar-item:hover {
   background-color: var(--app-main-color);
 }
-.active-item {
-  padding: 2px 5px;
+.left-bar-item.active {
+  padding: 5px 20px;
   background-color: var(--app-main-color);
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 /*footer*/
