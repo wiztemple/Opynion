@@ -25,10 +25,10 @@
               <a class="navbar-item" href="feeds.html">Feeds</a>
             </div>
             <div class="navbar-right">
-              <a class="navbar-item" href="#">
+              <a class="navbar-item authLink" href="#">
                 Sign Up
               </a>
-              <a class="navbar-item" href="#">
+              <a class="navbar-item authLink" href="#">
                 Log In
               </a>
             </div>
@@ -150,6 +150,44 @@
        </div>
      </div>
     </div>
- </div> 
+    <div class="modal signup target-js">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title text-center">Create your account here</p>
+          <div class="cancel-btn" aria-label="cancel">&#9587;</div>
+        </header>
+        <section class="modal-card-body">
+          <form>
+            <div class="form-horizontal">
+              <div class="input-box">
+                <label class="label">First Name</label>
+                <input class="form-control-md" type="text" placeholder="First Name">
+              </div>
+              <div class="input-box">
+                <label class="label">Last Name</label>
+                <input class="form-control-md" type="text" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-vertical">
+              <div class="input-box">
+                <label class="label">Email</label>
+                <input class="form-control-md" type="email" placeholder="Email">
+              </div>
+              <div class="input-box">
+                <label class="label">Password</label>
+                <input class="form-control-md" type="password" placeholder="Password">
+              </div>
+            </div>
+          </form>
+          
+        </section>
+        <footer class="modal-card-foot">
+          <button class="btn signup-btn ripple">Sign Up</button>
+        </footer>
+      </div>
+    </div>
+ </div>
+ <script src="./assets/js/main.js"></script>
 </body>
 </html>
