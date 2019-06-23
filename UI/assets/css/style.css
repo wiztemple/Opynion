@@ -352,7 +352,13 @@ outline: 1px solid var(--darkest);
 .label:not(:last-child) {
   margin-bottom: 0.5em;
 }
-
+/* comment inputFields */
+/* .inputField {
+  display: none;
+} */
+.inputField.active {
+  display: block;
+}
 .navbar {
   background-color: white;
   height: 4.063rem;
@@ -611,7 +617,7 @@ body.has-navbar-fixed-top {
   position: fixed;
   top:0;
   z-index:1000;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.95);
 }
 
 
@@ -925,25 +931,28 @@ color: #444;
   background-color: var(--app-bg-color);
   border: 1px solid rgba(0,0,0,0.06);
 }
-.tab-item-container {
+.tabs {
   height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.tab-item-container > .tablinks {
+.tabs > .tablinks {
   color: #495057;
   height: 4.063rem;
   padding: 20px 10px;
 }
-.tab-item-container .tablinks.active {
+.tablinks.active {
   border-bottom: 1px solid #444;
 }
-.tab-item-container > .tablinks:hover {
+.tabs > .tablinks:hover {
   border-bottom: 1px solid #444;
 }
-.tabcontent {
+.tabpane {
   display: none;
+}
+.tabpane.active {
+  display: block;
 }
 .tab-btn {
   height: 4rem;

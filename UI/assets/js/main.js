@@ -1,40 +1,75 @@
-const commentBtns = document.querySelectorAll('.reaction');
-const inputFields = document.querySelectorAll('.inputField');
+const dropInputField = document.querySelectorAll('.reactionJs');
 const signup = document.querySelector('.signup');
 const modals = document.querySelectorAll('.modal');
 const cancelBtn = document.querySelectorAll('.cancel-btn');
 const authLinks = document.querySelectorAll('.authLink');
 
 
-[...commentBtns].map(commentBtn => {
-  commentBtn.addEventListener('click', () => {
+// dropInputField.forEach( inputDrop => {
+//   inputDrop.addEventListener('click', () => {
+//     const inputFields = document.querySelectorAll('.inputField');
+//     inputFields.forEach(inputField => {
+//       inputField.classList.toggle('active');
+//     })
+//    })
+// })
+// [...commentBtns].map(commentBtn => {
+//   commentBtn.addEventListener('click', () => {
 
-    [...inputFields].map(inputField => {
-      if (inputField.style.display === 'block') {
+//     [...inputFields].map(inputField => {
+//       if (inputField.style.display === 'block') {
 
-        inputField.style.display = 'none';
+//         inputField.style.display = 'none';
 
-      } else {
-        inputField.style.display = 'block';
+//       } else {
+//         inputField.style.display = 'block';
 
-      }
+//       }
 
 
-    });
+//     });
 
-  });
-});
+//   });
+// });
 
 // tabs
 // const tabjs = document.querySelectorAll('.tabjs');
-const openTab = (event, tabName) => {
-  let tabcontent = document.querySelectorAll('.tabcontent');
-  [...tabcontent].map(tab => tab.style.display = "none");
-  let tablinks = document.querySelectorAll(".tablinks");
-  [...tablinks].map(tablink => tablink.className = tablink.className.replace(" active", ""));
-  document.getElementById(tabName).style.display = "block";
-  event.currentTarget.className += " active";
-}
+// const openTab = (event, tabName) => {
+//   let tabcontent = document.querySelectorAll('.tabcontent');
+//   [...tabcontent].map(tab => tab.style.display = "none");
+//   let tablinks = document.querySelectorAll(".tablinks");
+//   [...tablinks].map(tablink => tablink.className = tablink.className.replace(" active", ""));
+//   document.getElementById(tabName).style.display = "block";
+//   event.currentTarget.className += " active";
+// }
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.tabpane');
+tabs.addEventListener('click', e => {
+  if (e.target.tagName == "A") {
+    const targetPanel = document.querySelector(e.target.dataset.target);
+    panels.forEach(panel => {
+      if (panel == targetPanel) {
+        panel.classList.add('active');
+      } else {
+        panel.classList.remove('active');
+
+      }
+    })
+  }
+})
+// const openTab = event => {
+//   let tablinks = document.querySelectorAll('.tablinks');
+//   for (let i = 0; i < tablinks.length; i++) {
+//     tablinks[i].addEventListener('click', () => {
+//       const tabsContainer = tablinks[i].parentElement;
+//       const tab = document.querySelector('.tab');
+//       const tabNumber = a.dataset.forTab;
+//     })
+//   }
+ 
+// }
+// const navTab = document.getElementById('nav-tab');
+// navTab.addEventListener('click', openTab, false);
 /**
  * Display the signup form
  *

@@ -49,10 +49,10 @@
                 <div class="profile-username">Wiz Sullivan</div>
               </div>
               <div class="col-6">
-                <div class="tab-item-container">
-                  <a class="tablinks active" onclick="openTab(event, 'post')">Posts</a>
-                  <a class="tablinks" onclick="openTab(event, 'followers')">34 Followers</a>
-                  <a class="tablinks" onclick="openTab(event, 'following')">67 Following</a>
+                <div class="tabs">
+                  <a class="tablinks active" href="#" data-target="#post">Posts</a>
+                  <a href="#" class="tablinks" data-target="#followers">56 Followers</a>
+                  <a href="#" class="tablinks" data-target="#following">65 Following</a>
                 </div>
               </div>
               <div class="col-3">
@@ -76,8 +76,8 @@
               <div>38</div>
             </div>
           </div>
-          <div class="col-8">
-            <div id="post" class="tabcontent">
+          <div class="col-8 tabcontent">
+            <div class="tabpane active" id="post">
               <div class="card">
                 <div class="p-20">
                   <h4 class="card-title">Schools should have one meat-free day a week, says charity</h1>
@@ -91,7 +91,8 @@
                       </div>
                     </div>
                     <div class="card-body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo fugiat suscipit, perferendis magni
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo fugiat suscipit, perferendis
+                        magni
                         repudiandae consequatur quae dolores quas laudantium! Eos qui beatae optio. Nesciunt, voluptatem aut
                         exercitationem ratione inventore, ex similique, error autem tempore recusandae voluptates consequatur nemo
                         aliquid sit alias quibusdam amet illo mollitia qui et cumque voluptate....<a href="#">More</a></p>
@@ -135,7 +136,8 @@
                       </div>
                     </div>
                     <div class="card-body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo fugiat suscipit, perferendis magni
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo fugiat suscipit, perferendis
+                        magni
                         repudiandae consequatur quae dolores quas laudantium! Eos qui beatae optio. Nesciunt, voluptatem aut
                         exercitationem ratione inventore, ex similique, error autem tempore recusandae voluptates consequatur nemo
                         aliquid sit alias quibusdam amet illo mollitia qui et cumque voluptate....<a href="#">More</a></p>
@@ -167,13 +169,12 @@
                 </div>
               </div><!-- end card -->
             </div>
-            <div id="followers" class="tabcontent">
+            <div class="tabpane" id="followers">
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, in impedit iste corporis inventore
                 mollitia accusantium aut fuga ratione alias sit, quo, quasi eligendi numquam ipsa porro illum. Natus, explicabo?</p>
             </div>
-            <div id="following" class="tabcontent">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, in impedit iste corporis inventore
-                mollitia accusantium aut fuga ratione alias sit, quo, quasi eligendi numquam ipsa porro illum. Natus, explicabo?</p>
+            <div class="tabpane" id="following">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt earum accusamus reprehenderit in amet sed nam dolorum, quisquam nisi, est omnis placeat commodi! Eaque, nobis culpa. Officia sapiente neque possimus quis aliquam alias doloremque nisi facilis nobis vel. Voluptatum mollitia dolorum ducimus aut in ipsa perspiciatis ea quae quia. Consequuntur atque nemo, aspernatur ullam, animi minima aut adipisci veniam ex deserunt ea qui? Assumenda, eaque? Voluptates eligendi repudiandae nobis laudantium hic, impedit earum sapiente laborum eum non ea inventore iure. Corporis alias, nihil in, rem, similique unde molestias omnis quae atque at est. Nisi ex eum cum quod, modi ipsa.</p>
             </div>
           </div>
         </div>
