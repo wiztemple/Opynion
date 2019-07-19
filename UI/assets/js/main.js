@@ -42,21 +42,22 @@ const authLinks = document.querySelectorAll('.authLink');
 //   document.getElementById(tabName).style.display = "block";
 //   event.currentTarget.className += " active";
 // }
-const tabs = document.querySelector('.tabs');
-const panels = document.querySelectorAll('.tabpane');
-tabs.addEventListener('click', e => {
-  if (e.target.tagName == "A") {
-    const targetPanel = document.querySelector(e.target.dataset.target);
-    panels.forEach(panel => {
-      if (panel == targetPanel) {
-        panel.classList.add('active');
-      } else {
-        panel.classList.remove('active');
+// const tabs = document.querySelector('.tabs');
+// const panels = document.querySelectorAll('.tabpane');
+// tabs.addEventListener('click', e => {
+//   if (e.target.tagName == "A") {
+//     const targetPanel = document.querySelector(e.target.dataset.target);
+//     e.target.tagName.classList.add('active');
+//     panels.forEach(panel => {
+//       if (panel == targetPanel) {
+//         panel.classList.add('active');
+//       } else {
+//         panel.classList.remove('active');
 
-      }
-    })
-  }
-})
+//       }
+//     })
+//   }
+// })
 // const openTab = event => {
 //   let tablinks = document.querySelectorAll('.tablinks');
 //   for (let i = 0; i < tablinks.length; i++) {
@@ -111,3 +112,22 @@ const displaySignUp = () => signup.style.display = 'flex';
 //     navbar.style.boxShadow = '0px';
 //   }
 // };
+const fixedbar = document.getElementById('fixbar');
+const createBtn = document.querySelector('.createBtn');
+
+
+let scroll = window.pageYOffset;
+
+document.addEventListener('scroll', () => {
+  let offSet = window.pageYOffset;
+  scroll = offSet;
+  console.log(scroll >= 50);
+  if (scroll >= 50) {
+    fixedbar.style.height = 4.5 + `rem`;
+    fixedbar.style.transition = `ease-in 500ms`;
+    createBtn.style.boxShadow = `box-shadow: rgba(17, 17, 18, 0.04) 0 2px 4px, rgba(19, 20, 20, 0.06) 0 1px 1px;`;
+  } else {
+    fixedbar.style.height = 4.063 + `rem`;
+    createBtn.style.boxShadow = `none`;
+  }
+});
