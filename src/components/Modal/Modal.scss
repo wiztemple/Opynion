@@ -1,0 +1,136 @@
+/*modalcss*/
+.modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+
+.modal.is-active {
+  display: flex;
+}
+
+.modal-background {
+  background-color: rgba(10, 10, 10, 0.86);
+}
+
+.modal-content,
+.modal-card {
+  margin: 0 20px;
+  max-height: calc(100vh - 160px);
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  animation-name: modalopen;
+  animation-duration: 2s;
+}
+
+@media screen and (min-width: 769px),
+print {
+
+  .modal-content,
+  .modal-card {
+    margin: 0 auto;
+    max-height: calc(100vh - 40px);
+    width: 540px;
+  }
+}
+
+.modal-close {
+  background: none;
+  height: 40px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+}
+
+.modal-card {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 40px);
+  overflow: hidden;
+}
+
+.modal-card-head,
+.modal-card-foot {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  padding: 20px;
+  position: relative;
+}
+
+.modal-card-head {
+  position: relative;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.modal-card-title {
+  color: #363636;
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.modal-card-foot {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.modal-card-foot .button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.modal-card-body {
+  -webkit-overflow-scrolling: touch;
+  background-color: white;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  padding: 20px;
+}
+
+.cancel-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  transition: background-color 300ms ease-in;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

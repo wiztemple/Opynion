@@ -1,0 +1,6 @@
+{
+  "/posts/:id": "/posts/:id",
+  "/posts/:id/comments": "/posts/:id/comments",
+  "/posts/:id/comments/:id": "/posts/:id/comments/:id",
+  "/posts/:id/comments/:id/replies": "/posts/:id/comments/:id/replies" 
+}

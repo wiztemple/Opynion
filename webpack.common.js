@@ -9,13 +9,14 @@ const htmlWebpack = new htmlWebpackPlugin({
 const miniCssExtract = new miniCssExtractPlugin();
 module.exports = {
   target: 'web',
-  entry: './src/index.tsx',
+  entry: './src/index.jsx',
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.jsx', '.js'],
     alias: {
       pages: path.resolve(__dirname, './src/pages/'),
       components: path.resolve(__dirname, './src/components/'),
       modules: path.resolve(__dirname, './src/store/modules'),
+      utils: path.resolve(__dirname, './src/utils/'),
     },
     modules: [path.resolve(__dirname, 'src'), 'node_modules']
   },
@@ -28,7 +29,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(ts|js)x?$/,
+        test: /\.(jsx|js)x?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'

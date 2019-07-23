@@ -1,0 +1,32 @@
+/*left-bar*/
+.left-bar {
+  position: fixed;
+  width: 210px;
+  padding: 20px 10px 20px 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .left-bar {
+    position: relative;
+  }
+}
+
+.left-bar-item {
+  display: block;
+  color: #444;
+  margin: 8px 0;
+  padding: 5px 20px;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+.left-bar-item:hover {
+  background-color: #eee;
+}
+
+.left-bar-item.active {
+  padding: 5px 20px;
+  background-color: #eee;
+  border-radius: 30px;
+}

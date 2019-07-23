@@ -292,6 +292,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .input-box {
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -1403,3 +1404,146 @@ print {
 .w-100 {
   width: 100%;
 }
+
+/*skeletons*/
+.skeleton {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #eee;
+}
+
+.skeleton:nth-child(1) {
+  width: 100%;
+  padding: 20px;
+  margin-top: 60px;
+  border: 1px solid #eee;
+}
+
+.skeleton-title {
+  width: 100%;
+  height: 15px;
+  border-radius: 30px;
+}
+
+.skeleton-name {
+  width: 80px;
+  height: 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.skeleton-date {
+  width: 50px;
+  height: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 30px;
+}
+
+.skeleton-user {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 100%;
+}
+
+.skeleton-desc {
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.skeleton-desc:nth-child(5) {
+  width: 95%;
+}
+
+.skeleton-desc:nth-child(6) {
+  width: 85%;
+}
+
+.skeleton-desc:nth-child(7) {
+  width: 88%;
+}
+
+.skeleton-desc:nth-child(7) {
+  width: 98%;
+}
+
+.skeleton-reaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skeleton-reaction:nth-child(2) {
+  margin-left: 10px;
+}
+
+.skeleton-love {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 100%;
+}
+
+.skeleton-like {
+  width: 40px;
+  height: 7px;
+  margin-left: 10px;
+  margin-top: 9px;
+  border-radius: 3px;
+}
+
+.skeleton-count {
+  width: 40px;
+  height: 7px;
+  margin-left: 10px;
+  margin-top: 9px;
+  border-radius: 3px;
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  margin-top: 23px;
+  margin-left: 3px;
+  border-radius: 100%;
+}
+
+.loading {
+  position: relative;
+  background-color: #ddd;
+}
+
+.loading::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(0%);
+  background: linear-gradient(360deg, transparent, rgba(255, 255, 255, .4), transparent);
+  animation: loading 2s infinite;
+  transition: 2s ease-in-out;
+}
+
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+    transition: 2s ease-in-out;
+  }
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+
